@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery with Grid</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+text-align: center;
+}
+h1 {
+margin: 20px 0;
+}
+/* Photo Gallery */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 10px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+.gallery {
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+}
+</style>
+</head>
+<body>
+<h1>OG</h1>
+<div class="gallery">
+<img src="C:\Users\abhee\Downloads\2d4e58bc-8a07-417f-bb4a-5aed3e07a509.jpeg" alt="Destination 1">
+<img src="C:\Users\abhee\Downloads\Pawan Kalyan _ OG _ WALLPAPER.jpeg" alt="Destination 2">
+<img src="C:\Users\abhee\Downloads\e626e91d-d4c4-4db9-adf9-be75a2d51ba5.jpeg" alt="Destination 3">
+<img src="C:\Users\abhee\Downloads\e9749ecf-c04d-4e9d-bbaa-dd01ec956c0b.jpeg" alt="Destination 4">
+<img src="C:\Users\abhee\Downloads\f3a74be1-89af-4078-97be-bfee8ecf2a3d.jpeg" alt="Destination 5">
+</div>
+</body>
+</html>
